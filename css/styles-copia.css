@@ -1,0 +1,374 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: black;
+}
+
+/*HEADER*/
+
+header {
+    background-image: url(../Imagenes/Nueva\ York\ header.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+/*titulo nueva york*/
+h1 {
+    font-family: "montserrat", sans-serif;
+    font-size: 20px;
+    font-weight: 900;
+    color: #ef75ba;
+    text-align: start;
+    letter-spacing: 3 px;
+    background-color: rgba(0, 0, 0, 0.189);
+}
+
+/*header del index*/
+.header-index-arriba {
+    display: flex;
+    padding: 10px;
+    justify-content: space-between;
+}
+
+/*header de las secciones secundarias*/
+.header-secundario-arriba {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+/*header buscar y boton regresar*/
+.header-buscar {
+    display: none;
+}
+
+.header-volver-buscar {
+    display: flex;
+    justify-content: flex-end;
+    align-items: baseline;
+}
+
+
+/*links del navegador header*/
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+a {
+    font-family: "sono", sans-serif;
+    color: white;
+    text-decoration: none;
+    font-size: 7px;
+}
+
+/*botones formas y ubicaciones*/
+.boton {
+    padding-bottom: 5px;
+    padding-top: 5px;
+    background-color: #ef75ba;
+    border: solid white;
+    border-radius: 20px;
+    width: 150px;
+    height: 25px;
+    text-align: center;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+
+/*caracteristicas de los botones en vision celular*/
+.boton-celular {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    justify-items: center;
+    align-items: center;
+}
+
+.volver-margen {
+    width: 100px;
+    margin: 0;
+    margin-right: 17px;
+    height: auto;
+}
+
+.boton :hover {
+    color: black;
+}
+
+.block-botones {
+    display: block;
+}
+
+
+/*PARRAFOS DEL INDEX Y CADA SECCION*/
+/*H2 de las secciones*/
+h2 {
+    font-size: 12px;
+    font-family: "montserrat", sans-serif;
+    font-weight: 700;
+    color: #ef75ba;
+    text-align: center;
+    text-decoration: underline;
+    margin: 10px;
+}
+
+/*H2 del index y seccion curiosidades*/
+.titulo-secundario-no-color {
+    color: white;
+    text-decoration: none;
+}
+
+/*descripciones de las secciones*/
+h3 {
+    font-family: "sono", sans-serif;
+    color: white;
+    font-size: 10px;
+    font-weight: 400;
+    text-align: center;
+    margin: 10px;
+}
+
+/*estilo de la lista de curiosidades*/
+ol {
+    font-family: "sono", sans-serif;
+    color: white;
+    font-size: 10px;
+    font-weight: 400;
+    padding-left: 30px;
+}
+
+
+/* IMAGENES, VIDEO Y MAPAS*/
+/*tamanos de las imagenes, video y mapas*/
+.tamano-de-imagenes img {
+    width: 150px;
+    height: 150px;
+}
+
+.tamano-mapa iframe {
+    width: 150px;
+    height: 150px;
+}
+
+.tamano-video iframe {
+    width: 310px;
+    height: 150px;
+}
+
+/*posiciones de las fotos y video del index*/
+.video-fotos-index {
+    display: grid;
+    grid-template-columns: repeat(2, 150px);
+    grid-template-rows: repeat(3, 150px);
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+.video-fotos-index {
+    width: 100%;
+    height: 100%;
+}
+
+.posicion-video {
+    grid-column: 1/3;
+}
+
+/*posiciones de las imagenes y mapas de las secciones*/
+.secciones-imagenes-celular-tablet {
+    display: grid;
+    grid-template-columns: repeat(2, 150px);
+    grid-template-rows: repeat(2, 150px);
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+/*posicion de las imagenes de la seccion curiosidades*/
+.imagenes-curiosidades-celular-tablet {
+    display: grid;
+    grid-template-columns: repeat(2, 150px);
+    grid-template-rows: repeat(4, 150px);
+    justify-content: center;
+    gap: 0.5rem;
+    margin-bottom: 10px;
+}
+
+
+
+/*FOOTER*/
+a img {
+    width: 20px;
+    height: 20px;
+}
+
+.footer-links-separacion {
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+.footer-mapa iframe {
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+}
+
+.footer-separacion {
+    display: flex;
+    justify-content: space-between;
+}
+
+footer {
+    background-image: url(../Imagenes/Nueva\ York\ header.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+
+
+
+
+@media(min-width: 1201px) {
+    /*HEADER*/
+
+    /*titulo nueva york*/
+    h1 {
+        font-size: 64px;
+    }
+
+    /*header del index*/
+    .header-index-arriba {
+        height: 120px;
+        padding: 30px;
+        align-items: baseline;
+    }
+
+    /*header de las secciones secundarias*/
+    .header-secundario-arriba {
+        height: 120px;
+        padding: 30px;
+    }
+
+    /*header buscar y boton regresar*/
+    .header-buscar {
+        display: block;
+    }
+
+    /*links del navegador header*/
+    a {
+        font-size: 16px;
+    }
+
+    /*botones formas y ubicaciones*/
+    .boton {
+        padding: 5px 10px;
+        width: auto;
+        height: 32px;
+        margin-top: 30px;
+        margin-bottom: 20px;
+        min-width: 260px;
+    }
+
+
+    /*caracteristicas de los botones en vision computadora*/
+    .nav-lista {
+        display: flex;
+        justify-content: space-evenly;
+        flex-flow: row wrap;
+    }
+
+    /*PARRAFOS DEL INDEX Y CADA SECCION*/
+    /*H2 de las secciones*/
+    h2 {
+        font-size: 30px;
+        margin: 50px
+    }
+
+    /*descripciones de las secciones*/
+    h3 {
+        font-size: 20px;
+        margin: 20px;
+    }
+
+    /*estilo de la lista de curiosidades*/
+    ol {
+        font-size: 20px;
+        padding: 50px;
+    }
+
+    /* IMAGENES, VIDEO Y MAPAS*/
+    /*tamanos de las imagenes, video y mapas*/
+    .tamano-de-imagenes img {
+        width: 270px;
+        height: 270px;
+    }
+
+    .tamano-mapa iframe {
+        width: 270px;
+        height: 270px;
+    }
+
+    .tamano-video iframe {
+        width: 555px;
+        height: 270px;
+    }
+
+    /*posiciones de las fotos y video del index*/
+    .video-fotos-index {
+        display: grid;
+        grid-template-columns: repeat(4, 270px);
+        grid-template-rows: repeat(2, 270px);
+        justify-content: center;
+        gap: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    .posicion-video {
+        grid-column: 1/3;
+    }
+
+    /*posiciones de las imagenes y mapas de las secciones*/
+    .flex-container {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        gap: 1rem;
+    }
+
+    /*posiciones de las imagenes seccion curiosidades*/
+    .imagenes-curiosidades-computadora {
+        display: grid;
+        grid-template-columns: repeat(4, 270px);
+        grid-template-rows: repeat(2, 270px);
+        justify-content: center;
+        gap: 1rem;
+    }
+
+    /*FOOTER*/
+    a img {
+        width: 40px;
+        height: 40px;
+    }
+
+    .footer-mapa iframe {
+        width: 200px;
+        height: 200px;
+    }
+
+
+
+
+
+
+
+
+
+}
