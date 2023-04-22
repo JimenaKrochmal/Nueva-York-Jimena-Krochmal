@@ -1,0 +1,97 @@
+ul {
+    /*links del navegador header*/
+    list-style-type: none;
+    padding: 0;
+}
+
+a {
+    font-family: $tipografia-letra-general;
+    color: $color-letra-general;
+    text-decoration: none;
+    font-size: 7px;
+
+    @media(min-width: $mobile-size) and (max-width: $tablet-size) {
+        font-size: 10px;
+    }
+
+    @media(min-width:$computer-size) {
+        font-size: 16px;
+    }
+}
+
+.boton {
+    /*botones formas y ubicaciones*/
+    padding-bottom: 5px;
+    padding-top: 5px;
+    background-color: $color-letra-titulo;
+    border: solid $color-letra-general;
+    border-radius: 20px;
+    width: 150px;
+    height: 25px;
+    text-align: center;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+    & :hover {
+        color: $color-background;
+    }
+
+    @media(min-width: $mobile-size) and (max-width: $tablet-size) {
+        padding: 5px 10px;
+        width: auto;
+        height: auto;
+        min-width: 260px;
+    }
+
+    @media(min-width:$computer-size) {
+        padding: 5px 10px;
+        width: auto;
+        height: 32px;
+        margin-top: 30px;
+        margin-bottom: 20px;
+        min-width: 260px;
+    }
+}
+
+
+.boton-celular {
+    /*caracteristicas de los botones en vision celular*/
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    justify-items: center;
+    align-items: center;
+}
+
+.volver-margen {
+    width: 100px;
+    margin: 0;
+    margin-right: 17px;
+    height: auto;
+
+    @media(min-width:$computer-size) {
+        width: auto;
+    }
+}
+
+.block-botones {
+    display: block;
+}
+
+
+.nav-lista {
+    /*caracteristicas de los botones en vision computadora*/
+    @media(min-width: $mobile-size) and (max-width: $tablet-size) {
+        display: flex;
+        justify-content: space-evenly;
+        flex-flow: row wrap;
+    }
+
+    @media(min-width:$computer-size) {
+        display: flex;
+        justify-content: space-evenly;
+        flex-flow: row wrap;
+    }
+}

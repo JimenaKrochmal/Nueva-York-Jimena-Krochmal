@@ -1,0 +1,105 @@
+/*HEADER*/
+
+header {
+    background-image: url(../Imagenes/Nueva\ York\ header.jpg);
+    background-position: center;
+    background-size: cover;
+
+    h1 {
+        /*titulo nueva york*/
+        font-family: "montserrat", sans-serif;
+        font-size: 20px;
+        font-weight: 900;
+        color: $color-letra-titulo;
+        text-align: start;
+        letter-spacing: 3 px;
+        background-color: rgba(0, 0, 0, 0.189);
+
+        animation-name: mover-h1;
+        animation-duration: 5s;
+        animation-iteration-count: 1;
+
+        @keyframes mover-h1 {
+            0% {
+                translate: 0 0;
+            }
+
+            50% {
+                translate: 30%;
+            }
+
+            100% {
+                translate: 0 0;
+            }
+        }
+
+        @media(min-width: $mobile-size) and (max-width: $tablet-size) {
+            font-size: 40px;
+        }
+        @media(min-width: $computer-size) {
+            font-size: 64px;
+        }
+    }
+
+    .header-index-arriba {
+        /*header del index*/
+        display: flex;
+        padding: 10px;
+        justify-content: space-between;
+        @media(min-width: $mobile-size) and (max-width: $tablet-size) {
+            padding: 20px;
+            height: 90px;
+            align-items: baseline;
+            margin-bottom:0;
+        }
+        @media(min-width: $computer-size) {
+            height: 120px;
+            padding: 30px;
+            align-items: baseline;
+        }
+    }
+
+    .header-secundario-arriba {
+        /*header de las secciones secundarias*/
+        display: flex;
+        align-items: baseline;
+        justify-content: space-between;
+        padding: 10px;
+        @media(min-width: $mobile-size) and (max-width: $tablet-size) {
+            padding: 20px;
+            height: 90px;
+        }
+        @media(min-width: $computer-size) {
+            height: 120px;
+            padding: 30px;
+        }
+    }
+
+    .header-buscar {
+        /*header buscar y boton regresar*/
+        display: none;
+        @media(min-width: $computer-size) {
+            display: block;
+            &:hover {
+                transition-property: width background-color height;
+                transition-duration: 0.3s;
+                transition-timing-function: linear;
+                transform: scale(1.20, 2)
+            }
+        }
+    }
+
+    .header-volver-buscar {
+        display: flex;
+        justify-content: flex-end;
+        align-items: baseline;
+    }
+}
+
+
+
+
+
+
+
+

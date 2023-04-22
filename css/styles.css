@@ -1,3 +1,265 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
+body {
+  background-color: black;
+}
+
+/*HEADER*/
+header {
+  background-image: url(../Imagenes/Nueva\ York\ header.jpg);
+  background-position: center;
+  background-size: cover;
+}
+header h1 {
+  /*titulo nueva york*/
+  font-family: "montserrat", sans-serif;
+  font-size: 20px;
+  font-weight: 900;
+  color: #ef75ba;
+  text-align: start;
+  letter-spacing: 3 px;
+  background-color: rgba(0, 0, 0, 0.189);
+  animation-name: mover-h1;
+  animation-duration: 5s;
+  animation-iteration-count: 1;
+}
+@keyframes mover-h1 {
+  0% {
+    translate: 0 0;
+  }
+  50% {
+    translate: 30%;
+  }
+  100% {
+    translate: 0 0;
+  }
+}
+@media (min-width: 600px) and (max-width: 1200px) {
+  header h1 {
+    font-size: 40px;
+  }
+}
+@media (min-width: 1201px) {
+  header h1 {
+    font-size: 64px;
+  }
+}
+header .header-index-arriba {
+  /*header del index*/
+  display: flex;
+  padding: 10px;
+  justify-content: space-between;
+}
+@media (min-width: 600px) and (max-width: 1200px) {
+  header .header-index-arriba {
+    padding: 20px;
+    height: 90px;
+    align-items: baseline;
+    margin-bottom: 0;
+  }
+}
+@media (min-width: 1201px) {
+  header .header-index-arriba {
+    height: 120px;
+    padding: 30px;
+    align-items: baseline;
+  }
+}
+header .header-secundario-arriba {
+  /*header de las secciones secundarias*/
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  padding: 10px;
+}
+@media (min-width: 600px) and (max-width: 1200px) {
+  header .header-secundario-arriba {
+    padding: 20px;
+    height: 90px;
+  }
+}
+@media (min-width: 1201px) {
+  header .header-secundario-arriba {
+    height: 120px;
+    padding: 30px;
+  }
+}
+header .header-buscar {
+  /*header buscar y boton regresar*/
+  display: none;
+}
+@media (min-width: 1201px) {
+  header .header-buscar {
+    display: block;
+  }
+  header .header-buscar:hover {
+    transition-property: width background-color height;
+    transition-duration: 0.3s;
+    transition-timing-function: linear;
+    transform: scale(1.2, 2);
+  }
+}
+header .header-volver-buscar {
+  display: flex;
+  justify-content: flex-end;
+  align-items: baseline;
+}
+
+/*FOOTER*/
+footer {
+  background-image: url(../Imagenes/Nueva\ York\ header.jpg);
+  background-position: center;
+  background-size: cover;
+}
+footer a img {
+  width: 20px;
+  height: 20px;
+}
+@media (min-width: 600px) and (max-width: 1200px) {
+  footer a img {
+    width: 30px;
+    height: 30px;
+  }
+}
+@media (min-width: 1201px) {
+  footer a img {
+    width: 40px;
+    height: 40px;
+  }
+}
+footer .footer-links-separacion {
+  margin-left: 10px;
+  margin-top: 10px;
+}
+
+.footer-mapa iframe {
+  width: 100px;
+  height: 100px;
+  margin: 10px;
+}
+@media (min-width: 600px) and (max-width: 1200px) {
+  .footer-mapa iframe {
+    width: 150px;
+    height: 150px;
+  }
+}
+@media (min-width: 1201px) {
+  .footer-mapa iframe {
+    width: 200px;
+    height: 200px;
+  }
+}
+
+.footer-separacion {
+  display: flex;
+  justify-content: space-between;
+}
+
+ul {
+  /*links del navegador header*/
+  list-style-type: none;
+  padding: 0;
+}
+
+a {
+  font-family: "sono", sans-serif;
+  color: white;
+  text-decoration: none;
+  font-size: 7px;
+}
+@media (min-width: 600px) and (max-width: 1200px) {
+  a {
+    font-size: 10px;
+  }
+}
+@media (min-width: 1201px) {
+  a {
+    font-size: 16px;
+  }
+}
+
+.boton {
+  /*botones formas y ubicaciones*/
+  padding-bottom: 5px;
+  padding-top: 5px;
+  background-color: #ef75ba;
+  border: solid white;
+  border-radius: 20px;
+  width: 150px;
+  height: 25px;
+  text-align: center;
+  margin-left: 5px;
+  margin-right: 5px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.boton :hover {
+  color: black;
+}
+@media (min-width: 600px) and (max-width: 1200px) {
+  .boton {
+    padding: 5px 10px;
+    width: auto;
+    height: auto;
+    min-width: 260px;
+  }
+}
+@media (min-width: 1201px) {
+  .boton {
+    padding: 5px 10px;
+    width: auto;
+    height: 32px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    min-width: 260px;
+  }
+}
+
+.boton-celular {
+  /*caracteristicas de los botones en vision celular*/
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  justify-items: center;
+  align-items: center;
+}
+
+.volver-margen {
+  width: 100px;
+  margin: 0;
+  margin-right: 17px;
+  height: auto;
+}
+@media (min-width: 1201px) {
+  .volver-margen {
+    width: auto;
+  }
+}
+
+.block-botones {
+  display: block;
+}
+
+.nav-lista {
+  /*caracteristicas de los botones en vision computadora*/
+}
+@media (min-width: 600px) and (max-width: 1200px) {
+  .nav-lista {
+    display: flex;
+    justify-content: space-evenly;
+    flex-flow: row wrap;
+  }
+}
+@media (min-width: 1201px) {
+  .nav-lista {
+    display: flex;
+    justify-content: space-evenly;
+    flex-flow: row wrap;
+  }
+}
 
 /*# sourceMappingURL=styles.css.map */

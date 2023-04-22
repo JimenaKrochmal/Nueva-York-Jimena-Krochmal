@@ -1,0 +1,47 @@
+/*FOOTER*/
+footer {
+    background-image: url(../Imagenes/Nueva\ York\ header.jpg);
+    background-position: center;
+    background-size: cover;
+
+    a img {
+        width: 20px;
+        height: 20px;
+
+        @media(min-width: $mobile-size) and (max-width: $tablet-size) {
+            width: 30px;
+            height: 30px;
+        }
+
+        @media(min-width: $computer-size) {
+            width: 40px;
+            height: 40px;
+        }
+    }
+
+    .footer-links-separacion {
+        margin-left: 10px;
+        margin-top: 10px;
+    }
+}
+
+.footer-mapa iframe {
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+
+    @media(min-width: $mobile-size) and (max-width: $tablet-size) {
+        width: 150px;
+        height: 150px;
+    }
+
+    @media(min-width: $computer-size) {
+        width: 200px;
+        height: 200px;
+    }
+}
+
+.footer-separacion {
+    display: flex;
+    justify-content: space-between;
+}

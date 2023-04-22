@@ -1,0 +1,23 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+$color-background: black;
+$color-letra-titulo: #ef75ba;
+$color-letra-general: white;
+$tipografia-letra-general: "sono", sans-serif;
+$mobile-size: 600px;
+$tablet-size:1200px;
+$computer-size:1201px;
+
+
+@mixin grids(){
+    display: grid;
+    justify-content: center;
+}
+
+body{
+    background-color: $color-background;
+}
