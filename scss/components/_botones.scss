@@ -56,13 +56,25 @@ a {
 }
 
 
-.boton-celular {
-    /*caracteristicas de los botones en vision celular*/
+.nav-lista {
+    /*posicionamiento de los botones*/
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
     justify-items: center;
     align-items: center;
+
+    @media(min-width: $mobile-size) and (max-width: $tablet-size) {
+        display: flex;
+        justify-content: space-evenly;
+        flex-flow: row wrap;
+    }
+
+    @media(min-width:$computer-size) {
+        display: flex;
+        justify-content: space-evenly;
+        flex-flow: row wrap;
+    }
 }
 
 .volver-margen {
@@ -81,17 +93,4 @@ a {
 }
 
 
-.nav-lista {
-    /*caracteristicas de los botones en vision computadora*/
-    @media(min-width: $mobile-size) and (max-width: $tablet-size) {
-        display: flex;
-        justify-content: space-evenly;
-        flex-flow: row wrap;
-    }
 
-    @media(min-width:$computer-size) {
-        display: flex;
-        justify-content: space-evenly;
-        flex-flow: row wrap;
-    }
-}
