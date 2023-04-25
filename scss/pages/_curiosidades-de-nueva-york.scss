@@ -4,11 +4,13 @@ ol {
     font-size: 10px;
     font-weight: 400;
     padding-left: 30px;
+    padding-bottom: 10px;
 
     @media(min-width: $mobile-size) and (max-width: $tablet-size) {
         font-size: 15px;
         padding-left: 40px;
     }
+
     @media(min-width: $computer-size) {
         font-size: 20px;
         padding: 50px;
@@ -39,10 +41,9 @@ ol {
     gap: 0.5rem;
     margin-bottom: 10px;
 
-    & img{
+    & img {
         @include img-fondo;
     }
-    
 
     @media(min-width: $mobile-size) and (max-width: $tablet-size) {
         grid-template-columns: repeat(2, 225px);

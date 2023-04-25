@@ -9,16 +9,16 @@ $color-letra-titulo: #ef75ba;
 $color-letra-general: white;
 $tipografia-letra-general: "sono", sans-serif;
 $mobile-size: 600px;
-$tablet-size:1200px;
-$computer-size:1201px;
+$tablet-size: 1200px;
+$computer-size: 1201px;
 
 
-@mixin grids(){
+@mixin grids() {
     display: grid;
     justify-content: center;
 }
 
-body{
+body {
     background-color: $color-background;
 }
 
@@ -32,19 +32,19 @@ body{
     text-decoration: underline;
     margin: 10px;
 
-    @media(min-width:$mobile-size) and (max-width: $tablet-size){
+    @media(min-width:$mobile-size) and (max-width: $tablet-size) {
         font-size: 20px;
         margin: 30px
     }
 
-    @media(min-width: $computer-size){
+    @media(min-width: $computer-size) {
         font-size: 30px;
         margin: 50px
     }
 }
 
 /*descripciones de las secciones*/
-@mixin h3{
+@mixin h3 {
     font-family: $tipografia-letra-general;
     color: $color-letra-general;
     font-size: 10px;
@@ -52,21 +52,21 @@ body{
     text-align: center;
     margin: 10px;
 
-    @media(min-width:$mobile-size) and (max-width: $tablet-size){
+    @media(min-width:$mobile-size) and (max-width: $tablet-size) {
         font-size: 15px;
         margin: 10px;
     }
 
-    @media(min-width: $computer-size){
+    @media(min-width: $computer-size) {
         font-size: 20px;
         margin: 20px;
     }
 }
 
-@mixin img-fondo{
-    box-shadow: -1px 0px 3px 5px rgba(179,179,179,0.87);
-}
-@mixin iframe-fondo{
-    box-shadow: -1px 0px 3px 5px rgba(179,179,179,0.87);
+@mixin img-fondo {
+    box-shadow: 0px 0px 0px 2px $color-letra-titulo;
 }
 
+@mixin iframe-fondo {
+    box-shadow: 0px 0px 0px 2px $color-letra-titulo;
+}

@@ -9,23 +9,21 @@
     width: 150px;
     height: 150px;
 
-    @include img-fondo;
-
     @media(min-width: $mobile-size) and (max-width: $tablet-size) {
         width: 225px;
         height: 225px;
     }
 
     @media(min-width: $computer-size) {
+        @include img-fondo;
         width: 270px;
         height: 270px;
     }
 }
 
 .tamano-video iframe {
-    width: 310px;
+    width: 308px;
     height: 150px;
-
     @include iframe-fondo;
 
     @media(min-width: $mobile-size) and (max-width: $tablet-size) {

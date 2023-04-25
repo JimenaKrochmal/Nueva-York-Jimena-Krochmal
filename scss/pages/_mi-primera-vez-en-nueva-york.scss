@@ -10,7 +10,6 @@ h3 {
 .tamano-de-imagenes img {
     width: 150px;
     height: 150px;
-
     @include img-fondo;
 
     @media(min-width: $mobile-size) and (max-width: $tablet-size) {
@@ -27,7 +26,6 @@ h3 {
 .tamano-mapa iframe {
     width: 150px;
     height: 150px;
-
     @include iframe-fondo;
 
     @media(min-width: $mobile-size) and (max-width: $tablet-size) {
@@ -56,9 +54,9 @@ h3 {
     }
 
     @media(min-width: $computer-size) {
-            display: flex;
-            flex-flow: row wrap;
-            justify-content: center;
-            gap: 1rem;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        gap: 1rem;
     }
 }
