@@ -62,3 +62,11 @@ body{
         margin: 20px;
     }
 }
+
+@mixin img-fondo{
+    box-shadow: -1px 0px 3px 5px rgba(179,179,179,0.87);
+}
+@mixin iframe-fondo{
+    box-shadow: -1px 0px 3px 5px rgba(179,179,179,0.87);
+}
+

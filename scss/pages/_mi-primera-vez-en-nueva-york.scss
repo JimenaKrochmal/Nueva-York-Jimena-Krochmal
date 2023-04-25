@@ -11,6 +11,8 @@ h3 {
     width: 150px;
     height: 150px;
 
+    @include img-fondo;
+
     @media(min-width: $mobile-size) and (max-width: $tablet-size) {
         width: 225px;
         height: 225px;
@@ -25,6 +27,8 @@ h3 {
 .tamano-mapa iframe {
     width: 150px;
     height: 150px;
+
+    @include iframe-fondo;
 
     @media(min-width: $mobile-size) and (max-width: $tablet-size) {
         width: 225px;
@@ -43,7 +47,7 @@ h3 {
     @include grids;
     grid-template-columns: repeat(2, 150px);
     grid-template-rows: repeat(2, 150px);
-    align-items: center;
+    align-items: stretch;
     gap: 0.5rem;
 
     @media(min-width: $mobile-size) and (max-width: $tablet-size) {

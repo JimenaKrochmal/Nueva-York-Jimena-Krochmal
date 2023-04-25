@@ -4,6 +4,15 @@ ol {
     font-size: 10px;
     font-weight: 400;
     padding-left: 30px;
+
+    @media(min-width: $mobile-size) and (max-width: $tablet-size) {
+        font-size: 15px;
+        padding-left: 40px;
+    }
+    @media(min-width: $computer-size) {
+        font-size: 20px;
+        padding: 50px;
+    }
 }
 
 /* IMAGENES*/
@@ -30,16 +39,19 @@ ol {
     gap: 0.5rem;
     margin-bottom: 10px;
 
+    & img{
+        @include img-fondo;
+    }
+    
+
     @media(min-width: $mobile-size) and (max-width: $tablet-size) {
         grid-template-columns: repeat(2, 225px);
         grid-template-rows: repeat(4, 225px);
     }
 
     @media(min-width: $computer-size) {
-
         grid-template-columns: repeat(4, 270px);
         grid-template-rows: repeat(2, 270px);
-
         gap: 1rem;
     }
 }

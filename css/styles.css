@@ -270,6 +270,7 @@ a {
 .tamano-de-imagenes img {
   width: 150px;
   height: 150px;
+  box-shadow: -1px 0px 3px 5px rgba(179, 179, 179, 0.87);
 }
 @media (min-width: 600px) and (max-width: 1200px) {
   .tamano-de-imagenes img {
@@ -287,6 +288,7 @@ a {
 .tamano-video iframe {
   width: 310px;
   height: 150px;
+  box-shadow: -1px 0px 3px 5px rgba(179, 179, 179, 0.87);
 }
 @media (min-width: 600px) and (max-width: 1200px) {
   .tamano-video iframe {
@@ -385,6 +387,7 @@ h3 {
 .tamano-de-imagenes img {
   width: 150px;
   height: 150px;
+  box-shadow: -1px 0px 3px 5px rgba(179, 179, 179, 0.87);
 }
 @media (min-width: 600px) and (max-width: 1200px) {
   .tamano-de-imagenes img {
@@ -402,6 +405,7 @@ h3 {
 .tamano-mapa iframe {
   width: 150px;
   height: 150px;
+  box-shadow: -1px 0px 3px 5px rgba(179, 179, 179, 0.87);
 }
 @media (min-width: 600px) and (max-width: 1200px) {
   .tamano-mapa iframe {
@@ -422,7 +426,7 @@ h3 {
   justify-content: center;
   grid-template-columns: repeat(2, 150px);
   grid-template-rows: repeat(2, 150px);
-  align-items: center;
+  align-items: stretch;
   gap: 0.5rem;
 }
 @media (min-width: 600px) and (max-width: 1200px) {
@@ -487,6 +491,7 @@ h3 {
 .tamano-de-imagenes img {
   width: 150px;
   height: 150px;
+  box-shadow: -1px 0px 3px 5px rgba(179, 179, 179, 0.87);
 }
 @media (min-width: 600px) and (max-width: 1200px) {
   .tamano-de-imagenes img {
@@ -504,6 +509,7 @@ h3 {
 .tamano-mapa iframe {
   width: 150px;
   height: 150px;
+  box-shadow: -1px 0px 3px 5px rgba(179, 179, 179, 0.87);
 }
 @media (min-width: 600px) and (max-width: 1200px) {
   .tamano-mapa iframe {
@@ -524,7 +530,7 @@ h3 {
   justify-content: center;
   grid-template-columns: repeat(2, 150px);
   grid-template-rows: repeat(2, 150px);
-  align-items: center;
+  align-items: stretch;
   gap: 0.5rem;
 }
 @media (min-width: 600px) and (max-width: 1200px) {
@@ -589,6 +595,7 @@ h3 {
 .tamano-de-imagenes img {
   width: 150px;
   height: 150px;
+  box-shadow: -1px 0px 3px 5px rgba(179, 179, 179, 0.87);
 }
 @media (min-width: 600px) and (max-width: 1200px) {
   .tamano-de-imagenes img {
@@ -606,6 +613,7 @@ h3 {
 .tamano-mapa iframe {
   width: 150px;
   height: 150px;
+  box-shadow: -1px 0px 3px 5px rgba(179, 179, 179, 0.87);
 }
 @media (min-width: 600px) and (max-width: 1200px) {
   .tamano-mapa iframe {
@@ -626,7 +634,7 @@ h3 {
   justify-content: center;
   grid-template-columns: repeat(2, 150px);
   grid-template-rows: repeat(2, 150px);
-  align-items: center;
+  align-items: stretch;
   gap: 0.5rem;
 }
 @media (min-width: 600px) and (max-width: 1200px) {
@@ -650,6 +658,18 @@ ol {
   font-size: 10px;
   font-weight: 400;
   padding-left: 30px;
+}
+@media (min-width: 600px) and (max-width: 1200px) {
+  ol {
+    font-size: 15px;
+    padding-left: 40px;
+  }
+}
+@media (min-width: 1201px) {
+  ol {
+    font-size: 20px;
+    padding: 50px;
+  }
 }
 
 /* IMAGENES*/
@@ -678,6 +698,9 @@ ol {
   grid-template-rows: repeat(4, 150px);
   gap: 0.5rem;
   margin-bottom: 10px;
+}
+.imagenes-curiosidades img {
+  box-shadow: -1px 0px 3px 5px rgba(179, 179, 179, 0.87);
 }
 @media (min-width: 600px) and (max-width: 1200px) {
   .imagenes-curiosidades {
