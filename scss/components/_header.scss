@@ -87,11 +87,15 @@ header {
         @media(min-width: $computer-size) {
             display: block;
 
-            &:hover {
-                transition-property: width background-color height;
-                transition-duration: 0.3s;
-                transition-timing-function: linear;
-                transform: scale(1.20, 2)
+            &-hover {
+                margin-right: 2px;
+                &:hover {
+                    transition-property: width background-color height;
+                    transition-duration: 0.3s;
+                    transition-timing-function: linear;
+                    transform: scale(1.05, 1.3)
+                }
+
             }
         }
     }

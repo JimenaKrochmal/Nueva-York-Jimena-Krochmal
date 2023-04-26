@@ -98,11 +98,14 @@ header .header-buscar {
   header .header-buscar {
     display: block;
   }
-  header .header-buscar:hover {
+  header .header-buscar-hover {
+    margin-right: 2px;
+  }
+  header .header-buscar-hover:hover {
     transition-property: width background-color height;
     transition-duration: 0.3s;
     transition-timing-function: linear;
-    transform: scale(1.2, 2);
+    transform: scale(1.05, 1.3);
   }
 }
 header .header-volver-buscar {
