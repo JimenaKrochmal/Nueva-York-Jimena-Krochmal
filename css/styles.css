@@ -263,6 +263,10 @@ a {
   display: block;
 }
 
+.hover-volver:hover {
+  color: black;
+}
+
 /*H2 del index*/
 .titulo-secundario-no-color {
   color: white;
