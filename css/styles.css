@@ -25,6 +25,7 @@ header h1 {
   text-align: start;
   letter-spacing: 3 px;
   background-color: rgba(0, 0, 0, 0.189);
+  background: linear-gradient(0deg, rgba(255, 255, 255, 0.2791710434) 0%, rgba(0, 0, 0, 0.3688068978) 100%);
   animation-name: mover-h1;
   animation-duration: 5s;
   animation-iteration-count: 1;
