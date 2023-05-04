@@ -16,6 +16,13 @@ header {
   background-position: center;
   background-size: cover;
 }
+@media (min-width: 1200px) {
+  header {
+    position: sticky;
+    top: 0px;
+    z-index: 1;
+  }
+}
 header h1 {
   /*titulo nueva york*/
   font-family: "montserrat", sans-serif;

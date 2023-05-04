@@ -4,6 +4,12 @@ header {
     background-image: url(../Imagenes/Nueva\ York\ header.jpg);
     background-position: center;
     background-size: cover;
+    @media(min-width: $tablet-size){
+        position:sticky;
+        top:0px;
+        z-index: 1;
+
+    }
 
     h1 {
         /*titulo nueva york*/
