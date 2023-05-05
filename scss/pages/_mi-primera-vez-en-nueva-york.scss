@@ -72,7 +72,7 @@ h3 {
 
 
 .secciones-imagenes-posicion {
-/*posiciones de las imagenes y mapas de las secciones*/
+    /*posiciones de las imagenes y mapas de las secciones*/
     @include grids;
     grid-template-columns: repeat(2, 150px);
     grid-template-rows: repeat(2, 150px);

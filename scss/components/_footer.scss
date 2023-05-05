@@ -12,9 +12,10 @@ footer {
             width: 30px;
             height: 30px;
         }
+
         @media(min-width: $computer-size) {
             width: 40px;
-        height: 40px;
+            height: 40px;
         }
     }
 
@@ -28,10 +29,12 @@ footer {
     width: 100px;
     height: 100px;
     margin: 10px;
+
     @media(min-width: $mobile-size) and (max-width: $tablet-size) {
         width: 150px;
         height: 150px;
     }
+
     @media(min-width: $computer-size) {
         width: 200px;
         height: 200px;
@@ -42,10 +45,3 @@ footer {
     display: flex;
     justify-content: space-between;
 }
-
-
-
-
-
-
-

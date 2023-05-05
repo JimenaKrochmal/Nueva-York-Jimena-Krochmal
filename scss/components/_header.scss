@@ -14,7 +14,7 @@ header {
         text-align: start;
         letter-spacing: 3 px;
         background-color: rgba(0, 0, 0, 0.189);
-        background: linear-gradient(0deg, rgba(255,255,255,0.279171043417367) 0%, rgba(0,0,0,0.3688068977591037) 100%);
+        background: linear-gradient(0deg, rgba(255, 255, 255, 0.279171043417367) 0%, rgba(0, 0, 0, 0.3688068977591037) 100%);
         animation-name: mover-h1;
         animation-duration: 5s;
         animation-iteration-count: 1;
@@ -89,6 +89,7 @@ header {
 
             &-hover {
                 margin-right: 2px;
+
                 &:hover {
                     transition-property: width background-color height;
                     transition-duration: 0.3s;
