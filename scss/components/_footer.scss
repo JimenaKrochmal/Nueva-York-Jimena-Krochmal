@@ -12,14 +12,13 @@ footer {
             width: 30px;
             height: 30px;
         }
-
         @media(min-width: $computer-size) {
             width: 40px;
-            height: 40px;
+        height: 40px;
         }
     }
 
-    .footer-links-separacion {
+    .footer-links-posicion {
         margin-left: 10px;
         margin-top: 10px;
     }
@@ -29,19 +28,24 @@ footer {
     width: 100px;
     height: 100px;
     margin: 10px;
-
     @media(min-width: $mobile-size) and (max-width: $tablet-size) {
         width: 150px;
         height: 150px;
     }
-
     @media(min-width: $computer-size) {
         width: 200px;
         height: 200px;
     }
 }
 
-.footer-separacion {
+.footer-posicion {
     display: flex;
     justify-content: space-between;
 }
+
+
+
+
+
+
+

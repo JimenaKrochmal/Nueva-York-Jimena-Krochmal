@@ -4,12 +4,6 @@ header {
     background-image: url(../Imagenes/Nueva\ York\ header.jpg);
     background-position: center;
     background-size: cover;
-    @media(min-width: $tablet-size){
-        position:sticky;
-        top:0px;
-        z-index: 1;
-
-    }
 
     h1 {
         /*titulo nueva york*/
@@ -48,7 +42,7 @@ header {
         }
     }
 
-    .header-index-arriba {
+    .header-index-principal {
         /*header del index*/
         display: flex;
         padding: 10px;
@@ -68,7 +62,7 @@ header {
         }
     }
 
-    .header-secundario-arriba {
+    .header-secciones {
         /*header de las secciones secundarias*/
         display: flex;
         align-items: baseline;
@@ -87,7 +81,7 @@ header {
     }
 
     .header-buscar {
-        /*header buscar y boton regresar*/
+        /*header buscar*/
         display: none;
 
         @media(min-width: $computer-size) {
@@ -107,6 +101,7 @@ header {
     }
 
     .header-volver-buscar {
+        /*posicion del boton volver y opcion buscar*/
         display: flex;
         justify-content: flex-end;
         align-items: baseline;
