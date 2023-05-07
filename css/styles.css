@@ -546,7 +546,7 @@ h3 {
 
 /* IMAGENES Y MAPAS*/
 .tamano-de-imagenes img {
-  width: 150px;
+  width: 15px;
   height: 150px;
   box-shadow: 0px 0px 0px 2px #ef75ba;
 }
@@ -605,8 +605,21 @@ h3 {
   }
 }
 
+/*posiciones de las imagenes y mapas de las secciones*/
+@media (min-width: 1200px) {
+  .posicion-parques {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1rem;
+  }
+  .posicion-parques h3,
+  .posicion-parques .secciones-imagenes-posicion {
+    width: 50%;
+  }
+}
+
 .secciones-imagenes-posicion {
-  /*posiciones de las imagenes y mapas de las secciones*/
   display: grid;
   justify-content: center;
   grid-template-columns: repeat(2, 150px);
@@ -733,8 +746,22 @@ h3 {
   }
 }
 
+/*posiciones de las imagenes y mapas de las secciones*/
+@media (min-width: 1200px) {
+  .posicion-rascacielos {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1rem;
+  }
+  .posicion-rascacielos h3,
+  .posicion-rascacielos .secciones-imagenes-posicion {
+    width: 50%;
+  }
+}
+
 .secciones-imagenes-posicion {
-  /*posiciones de las imagenes y mapas de las secciones*/
   display: grid;
   justify-content: center;
   grid-template-columns: repeat(2, 150px);

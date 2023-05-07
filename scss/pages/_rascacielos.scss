@@ -6,6 +6,7 @@ h3 {
     @include h3;
 }
 
+
 /* IMAGENES Y MAPAS*/
 .tamano-de-imagenes img {
     width: 150px;
@@ -71,9 +72,22 @@ h3 {
 }
 
 
+/*posiciones de las imagenes y mapas de las secciones*/
+.posicion-rascacielos{
+    @media(min-width: $tablet-size){
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+    h3,
+    .secciones-imagenes-posicion {
+        width: 50%;
+    }
+    margin-bottom: 1rem;
+    }
+}
 
 .secciones-imagenes-posicion {
-    /*posiciones de las imagenes y mapas de las secciones*/
     @include grids;
     grid-template-columns: repeat(2, 150px);
     grid-template-rows: repeat(2, 150px);
