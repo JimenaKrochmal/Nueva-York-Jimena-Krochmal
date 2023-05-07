@@ -104,7 +104,7 @@ header .header-buscar {
   }
   header .header-buscar-hover:hover {
     background-color: #ef75ba;
-    color: white;
+    color: black;
   }
   header .header-buscar-hover:hover {
     transition-property: width background-color height;

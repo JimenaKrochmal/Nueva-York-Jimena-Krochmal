@@ -73,16 +73,18 @@ h3 {
 
 /*posiciones de las imagenes y mapas de las secciones*/
 
-.posicion-parques{
-    @media(min-width: $tablet-size){
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    h3,
-    .secciones-imagenes-posicion {
-        width: 50%;
-    }
-    margin-bottom: 1rem;
+.posicion-parques {
+    @media(min-width: $tablet-size) {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        h3,
+        .secciones-imagenes-posicion {
+            width: 50%;
+        }
+
+        margin-bottom: 1rem;
     }
 }
 

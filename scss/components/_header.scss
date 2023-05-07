@@ -89,12 +89,15 @@ header {
 
             &-hover {
                 margin-right: 2px;
-                &:hover{
+
+                &:hover {
                     background-color: $color-letra-titulo;
-                    @if(background-color: $color-letra-titulo){
-                        color:$color-letra-general;
+
+                    @if(background-color: $color-letra-titulo) {
+                        color: $color-background;
                     }
                 }
+
                 &:hover {
                     transition-property: width background-color height;
                     transition-duration: 0.3s;
