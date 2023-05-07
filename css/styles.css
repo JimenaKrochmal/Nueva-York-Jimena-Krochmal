@@ -103,6 +103,10 @@ header .header-buscar {
     margin-right: 2px;
   }
   header .header-buscar-hover:hover {
+    background-color: #ef75ba;
+    color: white;
+  }
+  header .header-buscar-hover:hover {
     transition-property: width background-color height;
     transition-duration: 0.3s;
     transition-timing-function: linear;
