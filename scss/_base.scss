@@ -22,9 +22,10 @@ body {
     background-color: $color-background;
 }
 
-html{
+html {
     font-size: 5px;
 }
+
 /*H2 de las secciones*/
 @mixin h2 {
     font-size: 2.4rem;
