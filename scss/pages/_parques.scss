@@ -74,6 +74,7 @@ h3 {
 /*posiciones de las imagenes y mapas de las secciones*/
 
 .posicion-parques {
+    
     @media(min-width: $tablet-size) {
         display: flex;
         justify-content: center;

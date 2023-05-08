@@ -12,7 +12,7 @@ body {
 /*descripciones de las secciones*/
 /*HEADER*/
 header {
-  background-image: url(../Imagenes/Nueva\ York\ header.jpg);
+  background-image: url(../imagenes/nueva-york-header-footer.jpg);
   background-position: center;
   background-size: cover;
 }
@@ -122,7 +122,7 @@ header .header-volver-buscar {
 
 /*FOOTER*/
 footer {
-  background-image: url(../Imagenes/Nueva\ York\ header.jpg);
+  background-image: url(../imagenes/nueva-york-header-footer.jpg);
   background-position: center;
   background-size: cover;
 }
