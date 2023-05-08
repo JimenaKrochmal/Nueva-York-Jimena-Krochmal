@@ -8,14 +8,14 @@ a {
     font-family: $tipografia-letra-general;
     color: $color-letra-general;
     text-decoration: none;
-    font-size: 7px;
+    font-size: 1.4rem;
 
     @media(min-width: $mobile-size) and (max-width: $tablet-size) {
-        font-size: 10px;
+        font-size: 2rem;
     }
 
     @media(min-width:$computer-size) {
-        font-size: 16px;
+        font-size: 3.2rem;
     }
 }
 

@@ -8,7 +8,7 @@ header {
     h1 {
         /*titulo nueva york*/
         font-family: "montserrat", sans-serif;
-        font-size: 20px;
+        font-size: 4rem;
         font-weight: 900;
         color: $color-letra-titulo;
         text-align: start;
@@ -34,11 +34,11 @@ header {
         }
 
         @media(min-width: $mobile-size) and (max-width: $tablet-size) {
-            font-size: 40px;
+            font-size: 8rem;
         }
 
         @media(min-width: $computer-size) {
-            font-size: 64px;
+            font-size: 12.8rem;
         }
     }
 

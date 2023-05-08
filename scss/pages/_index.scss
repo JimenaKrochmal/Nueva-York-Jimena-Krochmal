@@ -1,3 +1,7 @@
+body{
+    border-style: url("../Imagenes/parques.png");
+}
+
 /*H2 del index*/
 .titulo-secundario-no-color {
     color: $color-letra-general;
@@ -58,7 +62,7 @@
     }
 
     @media(min-width: $computer-size) {
-        width: 555px;
+        width: 550px;
         height: 270px;
 
         &:hover {
@@ -72,21 +76,21 @@
     @include grids;
     grid-template-columns: repeat(2, 150px);
     grid-template-rows: repeat(3, 150px);
-    gap: 0.5rem;
+    gap: 1.5rem;
+    margin-bottom: 1.5rem;
 
     @media(min-width: $mobile-size) and (max-width: $tablet-size) {
         @include grids;
         grid-template-columns: repeat(2, 225px);
         grid-template-rows: repeat(3, 225px);
-        gap: 0.5rem;
     }
 
     @media(min-width: $computer-size) {
         @include grids;
         grid-template-columns: repeat(4, 270px);
         grid-template-rows: repeat(2, 270px);
-        gap: 1rem;
-        margin-bottom: 1rem;
+        gap: 2rem;
+        margin-bottom: 3rem;
     }
 }
 
