@@ -1,51 +1,25 @@
 ol {
     font-family: $tipografia-letra-general;
     color: $color-letra-general;
-    font-size: 10px;
+    font-size: 2rem;
     font-weight: 400;
     padding-left: 30px;
     padding-bottom: 10px;
 
     @media(min-width: $mobile-size) and (max-width: $tablet-size) {
-        font-size: 15px;
+        font-size: 3rem;
         padding-left: 40px;
     }
 
     @media(min-width: $computer-size) {
-        font-size: 20px;
+        font-size: 4rem;
         padding: 50px;
     }
 }
 
 /* IMAGENES*/
 .tamano-de-imagenes img {
-    width: 150px;
-    height: 150px;
-
-    &:hover {
-        transition-property: width background-color height;
-        transition-duration: 0.3s;
-        transition-timing-function: linear;
-        transform: scale(1.1, 1.1)
-    }
-
-    @media(min-width: $mobile-size) and (max-width: $tablet-size) {
-        width: 225px;
-        height: 225px;
-
-        &:hover {
-            transform: scale(1.2, 1.2)
-        }
-    }
-
-    @media(min-width: $computer-size) {
-        width: 270px;
-        height: 270px;
-
-        &:hover {
-            transform: scale(1.3, 1.3)
-        }
-    }
+    @include medida-imagenes
 }
 
 
@@ -57,9 +31,6 @@ ol {
     gap: 1.5rem;
     margin-bottom: 10px;
 
-    & img {
-        @include img-fondo;
-    }
 
     @media(min-width: $mobile-size) and (max-width: $tablet-size) {
         grid-template-columns: repeat(2, 225px);
