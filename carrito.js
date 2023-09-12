@@ -23,7 +23,7 @@ const borrarProducto = producto => {
                 location.reload()
             }
             Swal.fire(
-                '¡Borrad0!',
+                '¡Borrado!',
                 'La experiencia ha sido borrado',
                 'success'
             )

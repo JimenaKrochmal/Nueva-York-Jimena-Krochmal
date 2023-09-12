@@ -1,7 +1,9 @@
 
 let main = document.querySelector('main')
 let experiencias = [];
+let carrito = [];
 
+//utilizo fetch para traer las cosas del archivo datos.json
 fetch("./datos.json")
     .then((response) => response.json())
     .then((datos) => {
@@ -16,12 +18,10 @@ fetch("./datos.json")
             <h3 class='experiencia-producto'> precio: $${experiencia.precio} </h3>
             <button class= 'boton-carrito-agregar' onclick='agregarProducto(${experiencia.id})'> Agregar al carrito </button>
             `
-
-            return main.append(div)
+            main.append(div)
         })
     })
 
-let carrito = [];
 
 // Cargo el carrito en caso de que ya tenga algo ingresado 
 const carritoGuardado = localStorage.getItem("carrito") || ""
@@ -40,7 +40,7 @@ const agregarProducto = producto => {
         Swal.fire({
             position: 'center',
             icon: 'success',
-            title: 'Your work has been saved',
+            title: 'Se agregó al carrito',
             showConfirmButton: true,
             timer: 15000
         })
